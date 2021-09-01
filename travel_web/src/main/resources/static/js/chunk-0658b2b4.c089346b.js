@@ -55,11 +55,11 @@
         var r = a("0c6d");
 
         function n(t) {
-            return Object(r["a"])({url: "http://192.168.84.211:9999/api/order/haikou/getProductCount", method: "get"})
+            return Object(r["a"])({url: "http://localhost:8080/order/haikou/getProductCount", method: "get"})
         }
 
         function o(t) {
-            return Object(r["a"])({url: "api/order/haikou/getHaiKouOrderByConditions/1/10", data: t, method: "post"})
+            return Object(r["a"])({url: "http://localhost:8080/order/haikou/getHaiKouOrderByConditions/1/10", data: t, method: "post"})
         }
     }, "4bc4": function (t, e, a) {
         "use strict";

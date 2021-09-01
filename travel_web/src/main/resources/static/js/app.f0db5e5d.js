@@ -219,13 +219,16 @@
                         statusData: !0,
                         activeIndex: "1",
                         mapShow: 0,
-                        navList: [{name: "首页概览", router: "/"}, {name: "订单监控", router: "/orderMonitoring"}, {
-                            name: "轨迹监控",
-                            router: "/trajectory"
-                        }, {name: "虚拟车站", router: "/station"}, {name: "出行迁途", router: "/movingway"}, {
-                            name: "数据分析",
-                            router: "/userData"
-                        }, {name: "热力图", router: "/heatMap"}, {name: "系统监控", router: "/system"}],
+                        navList: [
+                            {name: "首页概览", router: "/"},
+                            {name: "订单监控", router: "/orderMonitoring"},
+                            {name: "轨迹监控",router: "/trajectory"},
+                            {name: "虚拟车站", router: "/station"},
+                            {name: "出行迁途", router: "/movingway"},
+                            {name: "数据分析", router: "/userData"},
+                            {name: "热力图", router: "/heatMap"},
+                            {name: "系统监控", router: "/system"}
+                        ],
                         city: "成都"
                     }
                 }, methods: {

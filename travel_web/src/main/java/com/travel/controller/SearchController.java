@@ -5,7 +5,6 @@ import com.travel.dao.*;
 import com.travel.entity.*;
 import com.travel.log.Logging;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,9 +16,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 
-@SpringBootApplication
+//@SpringBootApplication
 @Controller
-@RequestMapping("didi")//localhost:8989/didi/vehicle_order
+@RequestMapping("/api/didi")//localhost:8989/didi/vehicle_order
 public class SearchController extends Logging {
     /**各城市车辆分布和各城市订单*/
     @Autowired

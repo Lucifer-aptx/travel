@@ -125,7 +125,7 @@
                     this.util.axios({
                         method: "post",
                         url: "/track/orderOverview",
-                        data: {cityCode: t, startTime: "2017-05-19 01:09:12", endTime: "2017-05-19 23:59:59"}
+                        data: {cityCode: t, startTime: "2021-08-28 01:09:12", endTime: "2021-08-28 23:59:59"}
                     }).then((function (t) {
                         null === t.data.data ? e.orderOverview = {
                             orderCount: 0,
@@ -143,8 +143,8 @@
                                         url: "/track/hourOrderCount",
                                         data: {
                                             cityCode: e,
-                                            startTime: "2016-11-01  00:00:00",
-                                            endTime: "2016-11-01  23:00:00"
+                                            startTime: "2021-08-28  00:00:00",
+                                            endTime: "2021-08-28  23:00:00"
                                         }
                                     }).then((function (t) {
                                         for (var e in console.log("订单详情"), console.log(t), a.hourOrderCount = t.data.data, a.hourOrderCount) a.keyData.push(e);
@@ -252,7 +252,7 @@
                             axisLabel: {textStyle: {color: "#fff"}},
                             type: "category",
                             boundaryGap: !1,
-                            data: ["周一", "周二", "周三"]
+                            data: ["周一", "周二", "周三","周四","周五"]
                         },
                         yAxis: {
                             axisLine: {type: "value", lineStyle: {type: "solid", color: "#fff", width: "1"}},

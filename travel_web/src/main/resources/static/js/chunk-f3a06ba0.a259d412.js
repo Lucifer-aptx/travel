@@ -281,7 +281,7 @@
                 this.initMap(), this.citycode = this.$store.state.citycode, this.getRightOrder(this.citycode), this.getTitleData()
             }, created: function () {
                 var e = this;
-                this.getMapdata(), console.log(this.$store.state.cityCode), this.$axios.get("api/region").then((function (t) {
+                this.getMapdata(), console.log(this.$store.state.cityCode), this.$axios.get("http://localhost:8080/region").then((function (t) {
                     e.options = t.data.data
                 }), (function (e) {
                     console.log(e)
@@ -289,15 +289,15 @@
                     console.log(t), e.wuhanOptions = t.data, e.initChart()
                 }), (function (e) {
                     console.log(e)
-                })), this.$axios.get("/api/xian").then((function (t) {
+                })), this.$axios.get("http://localhost:8080/xian").then((function (t) {
                     e.xianOptions = t.data.data
                 }), (function (e) {
                     console.log(e)
-                })), this.$axios.get("/api/haikou").then((function (t) {
+                })), this.$axios.get("http://localhost:8080/haikou").then((function (t) {
                     e.haikouOptions = t.data.data
                 }), (function (e) {
                     console.log(e)
-                })), this.$axios.get("/api/chengdu").then((function (t) {
+                })), this.$axios.get("http://localhost:8080/chengdu").then((function (t) {
                     e.chengduOptions = t.data.data
                 }), (function (e) {
                     console.log(e)

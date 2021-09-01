@@ -4,7 +4,6 @@ import com.travel.common.JedisUtil;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,13 +17,14 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 
-@SpringBootApplication
+//@SpringBootApplication
 @Controller
-@RequestMapping("didiRedis")
+@RequestMapping("/api/didiRedis")
 public class SearchRedisController {
     @ResponseBody
     @RequestMapping(value = "/monitoring", method = RequestMethod.POST)
     public String monitoring(HttpServletRequest request, HttpServletResponse response) throws IOException, JSONException {
+        System.out.println("############################################进入监控##########################################################");
         //获取连接redis
         JedisUtil jedisUtil = JedisUtil.getInstance();
         // Jedis jedis = JedisUtil.getInstance().getJedis();

@@ -28,7 +28,7 @@ object StreamingKafka {
       "key.deserializer" -> classOf[StringDeserializer],
       "value.deserializer" -> classOf[StringDeserializer],
       "group.id" -> group,
-      "auto.offset.reset" -> "latest",// earliest,latest,和none
+      "auto.offset.reset" -> "earliest",// earliest,latest,和none
       "enable.auto.commit" -> (false: java.lang.Boolean)  //设置成为false，自己来维护offset的值
     )
     // 使用direct方式来进行消费， 最少一个线程

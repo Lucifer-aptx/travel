@@ -67,11 +67,11 @@
         var n = e("0c6d");
 
         function o(t) {
-            return Object(n["a"])({url: "http://192.168.84.211:9999/api/order/haikou/getProductCount", method: "get"})
+            return Object(n["a"])({url: "http://localhost:8080/order/haikou/getProductCount", method: "get"})
         }
 
         function i(t) {
-            return Object(n["a"])({url: "api/order/haikou/getHaiKouOrderByConditions/1/10", data: t, method: "post"})
+            return Object(n["a"])({url: "http://localhost:8080/order/haikou/getHaiKouOrderByConditions/1/10", data: t, method: "post"})
         }
     }, "63ff": function (t, r, e) {
         var n = function (t) {

@@ -48,19 +48,19 @@ object SparkSQLHBaseSource {
     sparkSession.sqlContext.cacheTable("renter")
 
     // 订单信息统计分析
-    // OrderTransation.init(sparkSession)
+     OrderTransation.init(sparkSession)
 
     // 用户信息统计分析
     RenterTransation.init(sparkSession)
 
     // 司机信息统计分析
-    //DriverTransation.init(sparkSession)
+    DriverTransation.init(sparkSession)
 
     // 热门订单的统计
-    //HotOrderTransation.init(sparkSession)
+    HotOrderTransation.init(sparkSession)
 
     //热门区域的订单统计
-    // HotAreaOrder.init(sparkSession)
+     HotAreaOrder.init(sparkSession)
   }
 }
 
